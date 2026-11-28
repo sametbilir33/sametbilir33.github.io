@@ -10,16 +10,24 @@
     box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
-    padding: 64px 20px 96px;
-    background: #141413;
-    color: #e4e2dd;
-    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
-  }
+body {
+  margin: 0;
+  padding: 100px 20px 96px;
+  background: #141413;
+  color: #e4e2dd;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
 
+#banner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+ 
   main {
     max-width: 620px;
     margin: 0 auto;
@@ -132,7 +140,7 @@
 </head>
 <body>
  
-<script src="https://keepandroidopen.org/banner.js?hidebutton=off"></script>
+<div id="banner-container"><script src="https://keepandroidopen.org/banner.js?hidebutton=off"></script></div>
  
   <main>
     <header>
