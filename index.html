@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,37 +6,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <title>sametbilir33</title>
+
 <style>
   * {
     box-sizing: border-box;
   }
 
-body {
-  margin: 0;
-  padding: 110px 20px 96px
-  background: #141413;
-  color: #e4e2dd;
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
-}
+  html {
+    background-color: #141413;
+    scroll-behavior: smooth;
+  }
 
-#banner-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999999;
-}
+  body {
+    margin: 0;
+    padding: 0 20px 96px;
+    background-color: #141413;
+    color: #e4e2dd;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+  }
 
-#banner-container .kao-banner {
-  position: relative;
-  width: 100%;
-}
- 
+  #banner-container {
+    position: relative;
+    width: 100%;
+    z-index: 99999;
+    background-color: #141413;
+  }
+
   main {
     max-width: 620px;
     margin: 0 auto;
+    padding-top: 64px;
   }
 
   header {
@@ -141,86 +143,113 @@ body {
     font-size: 14px;
     color: #81a1c1;
   }
+
+  @media (max-width: 480px) {
+    .header-top {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    main {
+      padding-top: 48px;
+    }
+  }
 </style>
 </head>
+
 <body>
- 
-<div id="banner-container"></div>
-<script src="https://keepandroidopen.org/banner.js?hidebutton=off&id=banner-container"></script>
- 
-  <main>
-    <header>
-      <div class="header-top">
-        <h1>Samet</h1>
-        <div class="badges">
-          <a href="https://github.com/sametbilir33" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.shields.io/badge/github-sametbilir33-242b36?style=flat&logo=github&logoColor=88c0d0&labelColor=1a1d22" alt="GitHub sametbilir33">
-          </a>
-          <a href="https://github.com/sametbilir33?tab=followers" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.shields.io/github/followers/sametbilir33?style=flat&label=followers&color=242b36&labelColor=1a1d22" alt="GitHub followers">
-          </a>
-          <a href="https://github.com/sametbilir33?tab=repositories" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.shields.io/github/stars/sametbilir33?style=flat&label=stars&color=242b36&labelColor=1a1d22" alt="GitHub stars">
-          </a>
-        </div>
+
+<div id="banner-container">
+  <script src="https://keepandroidopen.org/banner.js?hidebutton=off"></script>
+</div>
+
+<main>
+  <header>
+    <div class="header-top">
+      <h1>Samet</h1>
+
+      <div class="badges">
+        <a href="https://github.com/sametbilir33" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/github-sametbilir33-242b36?style=flat&logo=github&logoColor=88c0d0&labelColor=1a1d22" alt="GitHub sametbilir33">
+        </a>
+
+        <a href="https://github.com/sametbilir33?tab=followers" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/github/followers/sametbilir33?style=flat&label=followers&color=242b36&labelColor=1a1d22" alt="GitHub followers">
+        </a>
+
+        <a href="https://github.com/sametbilir33?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/github/stars/sametbilir33?style=flat&label=stars&color=242b36&labelColor=1a1d22" alt="GitHub stars">
+        </a>
       </div>
-      <p class="intro">I tinker with low-level systems, Linux apps, and emulators.</p>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#tools">Tools</a>
-        <a href="https://github.com/sametbilir33" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </nav>
-    </header>
+    </div>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I enjoy building things from scratch just to see how they work underneath. Sometimes that means writing a toy OS or an emulator, other times putting together a small desktop app on Linux.
-      </p>
-      <p class="quote">
-        Mostly making things I wanted to see work.
-      </p>
-    </section>
+    <p class="intro">I tinker with low-level systems, Linux apps, and emulators.</p>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/sametbilir33/myos" target="_blank" rel="noopener noreferrer">MyOS</a>
-          <span class="desc">– an operating system built from scratch.</span>
-        </li>
-        <li>
-          <a href="https://github.com/sametbilir33/SSharp" target="_blank" rel="noopener noreferrer">S#</a>
-          <span class="desc">– a programming language I'm building.</span>
-        </li>
-        <li>
-          <a href="https://github.com/sametbilir33/nes-emulator" target="_blank" rel="noopener noreferrer">NES Emulator</a>
-          <span class="desc">– a Nintendo Entertainment System emulator.</span>
-        </li>
-        <li>
-          <a href="https://github.com/sametbilir33/HolmiumOS" target="_blank" rel="noopener noreferrer">HolmiumOS</a>
-          <span class="desc">– an advanced OS project built with CosmosOS.</span>
-        </li>
-        <li>
-          <a href="https://github.com/sametbilir33/VoxelCraft" target="_blank" rel="noopener noreferrer">VoxelCraft</a>
-          <span class="desc">– an experimental voxel project.</span>
-        </li>
-      </ul>
-    </section>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#tools">Tools</a>
+      <a href="https://github.com/sametbilir33" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </header>
 
-    <section id="tools">
-      <h2>Tools</h2>
-      <p>
-        <strong>Languages:</strong> C, C++, C#<br>
-        <strong>Graphics &amp; UI:</strong> SDL2, OpenGL, Wayland, Qt, GTK<br>
-        <strong>System &amp; Build:</strong> Arch Linux, QEMU, CMake, Bash, Git<br>
-        <strong>Editor:</strong> VS Code
-      </p>
-    </section>
+  <section id="about">
+    <h2>About</h2>
 
-    <footer>
-      <a href="https://github.com/sametbilir33" target="_blank" rel="noopener noreferrer">https://github.com/sametbilir33</a>
-    </footer>
-  </main>
+    <p>
+      I enjoy building things from scratch just to see how they work underneath. Sometimes that means writing a toy OS or an emulator, other times putting together a small desktop app on Linux.
+    </p>
+
+    <p class="quote">
+      Mostly making things I wanted to see work.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <ul>
+      <li>
+        <a href="https://github.com/sametbilir33/myos" target="_blank" rel="noopener noreferrer">MyOS</a>
+        <span class="desc">– an operating system built from scratch.</span>
+      </li>
+
+      <li>
+        <a href="https://github.com/sametbilir33/SSharp" target="_blank" rel="noopener noreferrer">S#</a>
+        <span class="desc">– a programming language I'm building.</span>
+      </li>
+
+      <li>
+        <a href="https://github.com/sametbilir33/nes-emulator" target="_blank" rel="noopener noreferrer">NES Emulator</a>
+        <span class="desc">– a Nintendo Entertainment System emulator.</span>
+      </li>
+
+      <li>
+        <a href="https://github.com/sametbilir33/HolmiumOS" target="_blank" rel="noopener noreferrer">HolmiumOS</a>
+        <span class="desc">– an advanced OS project built with CosmosOS.</span>
+      </li>
+
+      <li>
+        <a href="https://github.com/sametbilir33/VoxelCraft" target="_blank" rel="noopener noreferrer">VoxelCraft</a>
+        <span class="desc">– an experimental voxel project.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="tools">
+    <h2>Tools</h2>
+
+    <p>
+      <strong>Languages:</strong> C, C++, C#<br>
+      <strong>Graphics &amp; UI:</strong> SDL2, OpenGL, Wayland, Qt, GTK<br>
+      <strong>System &amp; Build:</strong> Arch Linux, QEMU, CMake, Bash, Git<br>
+      <strong>Editor:</strong> VS Code
+    </p>
+  </section>
+
+  <footer>
+    <a href="https://github.com/sametbilir33" target="_blank" rel="noopener noreferrer">https://github.com/sametbilir33</a>
+  </footer>
+</main>
+
 </body>
 </html>
