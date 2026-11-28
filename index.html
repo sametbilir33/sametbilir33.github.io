@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  padding: 100px 20px 96px;
+  padding: 110px 20px 96px
   background: #141413;
   color: #e4e2dd;
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
@@ -25,7 +25,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99999;
+  z-index: 999999;
+}
+
+#banner-container .kao-banner {
+  position: relative;
+  width: 100%;
 }
  
   main {
@@ -140,7 +145,8 @@ body {
 </head>
 <body>
  
-<div id="banner-container"><script src="https://keepandroidopen.org/banner.js?hidebutton=off"></script></div>
+<div id="banner-container"></div>
+<script src="https://keepandroidopen.org/banner.js?hidebutton=off&id=banner-container"></script>
  
   <main>
     <header>
